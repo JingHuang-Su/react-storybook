@@ -1,7 +1,7 @@
 import path from 'path';
 import webpack from 'webpack';
 import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
-import WatchMissingNodeModulesPlugin from './WatchMissingNodeModulesPlugin';
+import WatchMissingNodeModulesPlugin from './WatchMissingNodeModulesPlugin.js';
 import {
   OccurenceOrderPlugin,
   includePaths,
@@ -9,7 +9,7 @@ import {
   nodeModulesPaths,
   loadEnv,
   nodePaths,
-} from './utils';
+} from './utils.js';
 import babelLoaderConfig from './babel.js';
 
 export default function () {

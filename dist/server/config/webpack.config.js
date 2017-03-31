@@ -55,11 +55,11 @@ var _caseSensitivePathsWebpackPlugin = require('case-sensitive-paths-webpack-plu
 
 var _caseSensitivePathsWebpackPlugin2 = _interopRequireDefault(_caseSensitivePathsWebpackPlugin);
 
-var _WatchMissingNodeModulesPlugin = require('./WatchMissingNodeModulesPlugin');
+var _WatchMissingNodeModulesPlugin = require('./WatchMissingNodeModulesPlugin.js');
 
 var _WatchMissingNodeModulesPlugin2 = _interopRequireDefault(_WatchMissingNodeModulesPlugin);
 
-var _utils = require('./utils');
+var _utils = require('./utils.js');
 
 var _babel = require('./babel.js');
 
