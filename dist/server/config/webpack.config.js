@@ -16,7 +16,7 @@ exports.default = function () {
       filename: 'static/[name].bundle.js',
       publicPath: '/'
     },
-    plugins: [new _webpack2.default.DefinePlugin((0, _utils.loadEnv)()), new _utils.OccurenceOrderPlugin(), new _webpack2.default.HotModuleReplacementPlugin(), new _caseSensitivePathsWebpackPlugin2.default(), new _WatchMissingNodeModulesPlugin2.default(_utils.nodeModulesPaths)],
+    plugins: [new _webpack2.default.DefinePlugin((0, _utils.loadEnv)()), new _utils.OccurenceOrderPlugin(), new _webpack2.default.HotModuleReplacementPlugin(), new _caseSensitivePathsWebpackPlugin2.default()],
     module: {
       loaders: [{
         test: /\.jsx?$/,
@@ -54,10 +54,6 @@ var _webpack2 = _interopRequireDefault(_webpack);
 var _caseSensitivePathsWebpackPlugin = require('case-sensitive-paths-webpack-plugin');
 
 var _caseSensitivePathsWebpackPlugin2 = _interopRequireDefault(_caseSensitivePathsWebpackPlugin);
-
-var _WatchMissingNodeModulesPlugin = require('./WatchMissingNodeModulesPlugin.js');
-
-var _WatchMissingNodeModulesPlugin2 = _interopRequireDefault(_WatchMissingNodeModulesPlugin);
 
 var _utils = require('./utils.js');
 

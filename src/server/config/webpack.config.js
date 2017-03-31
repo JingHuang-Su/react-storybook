@@ -1,12 +1,12 @@
 import path from 'path';
 import webpack from 'webpack';
 import CaseSensitivePathsPlugin from 'case-sensitive-paths-webpack-plugin';
-import WatchMissingNodeModulesPlugin from './WatchMissingNodeModulesPlugin.js';
+// import WatchMissingNodeModulesPlugin from './WatchMissingNodeModulesPlugin.js';
 import {
   OccurenceOrderPlugin,
   includePaths,
   excludePaths,
-  nodeModulesPaths,
+  // nodeModulesPaths,
   loadEnv,
   nodePaths,
 } from './utils.js';
@@ -36,7 +36,7 @@ export default function () {
       new OccurenceOrderPlugin(),
       new webpack.HotModuleReplacementPlugin(),
       new CaseSensitivePathsPlugin(),
-      new WatchMissingNodeModulesPlugin(nodeModulesPaths),
+    //   new WatchMissingNodeModulesPlugin(nodeModulesPaths),
     ],
     module: {
       loaders: [
